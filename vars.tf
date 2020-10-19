@@ -16,14 +16,6 @@ variable "aws_region" {
 # dynamically retrieves all availability zones for current region
 #data "aws_availability_zones" "available" {}
 
-# specifying AZs 
-#   comment off this "azs" to retrive all AZs dynamically (uncomment the line above "data ...")
-variable "azs" {
-#  type = "list"
-#  default = ["us-west-1a", "us-west-1b", "us-west-1c"]
-  default = "us-west-1a"
-}
-
 variable "ec2_amis" {
   description = "Ubuntu Server 18.04 LTS (HVM)"
   default     = "ami-03fac5402e10ea93b"
